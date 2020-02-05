@@ -49,12 +49,13 @@ public class Calculator
 		
 		frame.pack(); //Use panels preferred sizes
 		frame.setLocationRelativeTo(null); //make window open in center of screen
-		frame.setVisible(true);
+		
 		
 		frame.add(top, BorderLayout.NORTH); //add panel to frame
 		frame.add(center, BorderLayout.CENTER);
 		frame.add(bottoms, BorderLayout.SOUTH);
-		
+		frame.setVisible(true);
+
 		//setup timer
 		
 		Timer t = new Timer(30, new ActionListener()
